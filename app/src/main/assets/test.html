@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+
+<script>
+    function getAndroid(){
+        var test = elso.sendJS();
+        document.getElementById("formAndroid").innerHTML = test;
+    }
+
+
+    function sendAndroid(){
+        var data = "我来自JS";
+        elso.getJS(data);
+    }
+
+
+</script>
+
+<body>
+<p><button onclick="getAndroid()"></button></p>
+<p><a>这是来自Android的数据：</a></p>
+<p><a id="formAndroid"></a></p>
+</body>
+</html>
